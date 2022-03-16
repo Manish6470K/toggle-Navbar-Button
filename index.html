@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/bf48519822.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="box">
+            <!-- <i class="fa-solid fa-circle-xmark" id="ic" onclick="fun()"></i> -->
+            <i class="fa-solid fa-bars-staggered" id="ic" onclick="fun()"></i>
+        </div>
+    </div>
+    
+    <script>
+        
+        function fun(){
+            var icon=document.getElementById("ic");
+            var getAtt = icon.getAttribute('class');
+            if(getAtt == "fa-solid fa-bars-staggered"){
+                icon.setAttribute('class','fa-solid fa-circle-xmark');
+            }
+            else{
+                icon.setAttribute('class','fa-solid fa-bars-staggered');
+            }
+        }
+    </script>
+</body>
+</html>
